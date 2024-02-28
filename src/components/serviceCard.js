@@ -5,10 +5,10 @@ import React from "react";
 const ServiceCard = ({ data }) => {
   console.log(data);
   return (
-    <div class="max-w-full shadow-slate-300 shadow bg-white border border-gray-200 rounded-lg dark:bg-[#5C5470] dark:border-gray-700">
+    <div class="max-w-full h-max shadow-slate-300 shadow bg-white border border-gray-200 rounded-lg dark:bg-[#5C5470] dark:border-gray-700">
       <a href="#">
         {/* <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" /> */}
-        <Image src={data.image} height={200} width={200} />
+        <Image className=" w-full h-full" src={data.image} height={200} width={200} />
       </a>
       <div class="p-5">
         <a href="#">

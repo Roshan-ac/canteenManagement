@@ -7,38 +7,37 @@ import { useEffect } from "react";
 const inter = Inter({ subsets: ["latin"] });
 const serviceData = [
   {
-    title: "Bruno’s Bistro",
-    image: "/images/food.jpg",
+    title: "Appetizers",
+    id: "FD457802",
+    image: "/images/Appetizers.jpg",
+    discription:
+      "A food or drink that stimulates the appetite and is usually served before a meal",
+    link: "/foods/FD457802",
+  },
+
+  {
+    title: "Entrees",
+    id: "FD45G4T802",
+    image: "/images/Entrees.jpg",
+    discription:
+      "An entree is the main dish served at a typical 3 or 5-course meal in North America.",
+    link: "/foods/FD45G4T802",
+  },
+  {
+    title: "Sides",
     discription: "A cozy neighborhood eatery serving classic Italian dishes.",
     link: "/foods/Bruno's-bistro",
   },
   {
-    title: "Sushi Haven",
+    title: "Desserts",
     discription:
       "ushi Haven is a modern Japanese restaurant specializing in fresh,",
     link: "/foods/sushi-haven",
   },
   {
-    title: "Bruno’s Bistro",
+    title: "Beverages",
     discription: "A cozy neighborhood eatery serving classic Italian dishes.",
     link: "/foods/Bruno's-bistro",
-  },
-  {
-    title: "Sushi Haven",
-    discription:
-      "ushi Haven is a modern Japanese restaurant specializing in fresh,",
-    link: "/foods/sushi-haven",
-  },
-  {
-    title: "Bruno’s Bistro",
-    discription: "A cozy neighborhood eatery serving classic Italian dishes.",
-    link: "/foods/Bruno's-bistro",
-  },
-  {
-    title: "Sushi Haven",
-    discription:
-      "ushi Haven is a modern Japanese restaurant specializing in fresh,",
-    link: "/foods/sushi-haven",
   },
 ];
 export default function Home() {
@@ -84,7 +83,7 @@ export default function Home() {
               Explore Services
             </h1>
           </div>
-          <div className=" grid grid-cols-3 gap-4">
+          <div className=" grid grid-cols-2 gap-4">
             {/* <ServiceCard /> */}
             {serviceData.map((item) => (
               <ServiceCard data={item} />
@@ -97,6 +96,7 @@ export default function Home() {
             <p>Links</p>
             <ul className="flex gap-8">
               <li>Foods</li>
+              <li >Contact</li>
               <li>Snacks</li>
               <li>Drinks</li>
             </ul>
@@ -111,3 +111,9 @@ export default function Home() {
     </div>
   );
 }
+
+
+
+
+
+
